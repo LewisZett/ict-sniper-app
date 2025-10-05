@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Gemini AI API Call ---
     async function callGemini(prompt, apiKey) {
-        const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
+        const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
         const body = { contents: [{ parts: [{ text: prompt }] }] };
 
         const response = await fetch(`${url}?key=${apiKey}`, {
